@@ -1,21 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './app.component';
-import { UnityIntegrationComponent } from './unity-integration/unity-integration.component';
-
+import { UnityAngularModule } from 'unity-angular';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    UnityIntegrationComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
-  ],
-  exports: [
-    UnityIntegrationComponent
+    BrowserModule, UnityAngularModule
   ],
   providers: [],
   bootstrap: [AppComponent]

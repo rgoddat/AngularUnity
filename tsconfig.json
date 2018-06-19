@@ -1,16 +1,10 @@
 {
   "compileOnSave": false,
-  "angularCompilerOptions": {
-    "strictMetadataEmit": true
-  },
   "compilerOptions": {
+    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
-    "declaration": true,
-    "noImplicitAny": true,
-    "module": "es2015",
-    "stripInternal": true,
-    "skipLibCheck": true,
+    "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -21,6 +15,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
-  },
+    ],
+    "paths": {
+      "unity-angular": [
+        "dist/unity-angular"
+      ],
+      "unity-angular/*": [
+        "dist/unity-angular/*"
+      ]
+    }
+  }
 }
