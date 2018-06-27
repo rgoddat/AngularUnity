@@ -15,7 +15,8 @@ Run `npm install <path-to-lib-npm package>` to install the library in your proje
 Add `<script src="../../assets/Unity/UnityLoader.js"></script>  
 <script src="../../assets/Unity/TemplateData/UnityProgress.js"></script>`  
 to your index.html inside the `<head></head>`    
-Add the Build folder of your Unity WebGL build inside the assets folder (or wherever you want).  
+Add the Build folder of your Unity WebGL build inside the assets folder (or wherever you want).
+The library `assets` folder mmight not been added in the project's assets on build. If it happens just copy the `projects/unity-angular/src/assets` folder inside the project and merge it with your assets.
 
 In your layout file add the following line : `<lib-unity-angular appLocation="path/to/unity/build/.json" appWidth="desiredWidth" appHeight="desiredHeight"></lib-unity-angular>`  
 
