@@ -6,14 +6,14 @@ This repo packages the source for an Angular library aiming to include a Unity W
 
 The sources for the library are located in `projects/unity-angular`
 
-##Library build
+## Library build
 Run `ng build unity-angular` to build the library. Then copy the `projects/unity-angular/src/assets` folder inside the `dist/unity-angular/esm5` folder and the `dist\unity-angular\esm2015` folder.  
 Move to the dist/unity-angular package and run `npm pack` to build a npm package.
 
 ## Using the Library  
 Run `npm install <path-to-lib-npm package>` to install the library in your project.  
-Add `<script src="../../assets/Unity/UnityLoader.js"></script>  
-<script src="../../assets/Unity/TemplateData/UnityProgress.js"></script>`  
+Add ```<script src="../../assets/Unity/UnityLoader.js"></script>  
+<script src="../../assets/Unity/TemplateData/UnityProgress.js"></script>```  
 to your index.html inside the `<head></head>`    
 Add the Build folder of your Unity WebGL build inside the assets folder (or wherever you want).
 The library `assets` folder mmight not been added in the project's assets on build. If it happens just copy the `projects/unity-angular/src/assets` folder inside the project and merge it with your assets.
@@ -52,7 +52,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-##Licence
+## Licence
 
 
 
