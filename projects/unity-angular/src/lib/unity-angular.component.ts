@@ -36,14 +36,8 @@ export class UnityAngularComponent implements OnInit {
   @Input() appWidth: String;
   @Input() appHeight: String;
 
-  constructor() { }
-
   ngOnInit() {
-    console.log(UnityLoader);
-    console.log(UnityProgress);
-    console.log(this.appLocation);
     this.gameInstance = UnityLoader.instantiate("gameContainer", this.appLocation, {onProgress: UnityProgress});
-    console.log("instance");
   }
 
 }
